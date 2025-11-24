@@ -15,7 +15,7 @@
 	<version>1.0.0</version>
 	<name>witetec-sdk</name>
 	<description>Biblioteca SDK para integrações de pagamentos com o Witetec</description>
-	<url/>
+    <url>https://github.com/TechSete/witetec-sdk</url>
 
     <licenses>
         <license>
