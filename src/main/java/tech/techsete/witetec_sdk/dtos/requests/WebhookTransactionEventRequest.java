@@ -16,7 +16,7 @@ import java.util.Collection;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class WebhookEventRequest implements Serializable {
+public class WebhookTransactionEventRequest implements Serializable {
 
     @JsonProperty("eventType")
     private WebhookEventType eventType;

@@ -1,6 +1,7 @@
 package tech.techsete.witetec_sdk.dtos.responses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
 import lombok.*;
 import tech.techsete.witetec_sdk.enums.TransactionStatus;
 
@@ -34,6 +35,18 @@ public class PixTransactionResponse implements Serializable {
         @JsonProperty("amount")
         private Integer amount;
 
+        @JsonProperty("feeAmount")
+        private Integer feeAmount;
+
+        @JsonProperty("netAmount")
+        private Integer netAmount;
+
+        @JsonProperty("sellerId")
+        private String sellerId;
+
+        @JsonProperty("sellerName")
+        private String sellerName;
+
         @JsonProperty("customer")
         private Customer customer;
 
@@ -48,6 +61,24 @@ public class PixTransactionResponse implements Serializable {
 
         @JsonProperty("pix")
         private Pix pix;
+
+        @JsonProperty("description")
+        private String description;
+
+        @JsonProperty("installments")
+        private Integer installments;
+
+        @JsonProperty("metadata")
+        private JsonNode metadata;
+
+        @JsonProperty("paidAt")
+        private OffsetDateTime paidAt;
+
+        @JsonProperty("end2endId")
+        private String end2endId;
+
+        @JsonProperty("postbackUrl")
+        private String postbackUrl;
 
         @JsonProperty("createdAt")
         private OffsetDateTime createdAt;
