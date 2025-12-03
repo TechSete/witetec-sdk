@@ -81,7 +81,7 @@ public class WithdrawService {
                                                       @Valid WithdrawRequest request) {
 
         return webClient.post()
-                .uri("//withdrawals")
+                .uri("/withdrawals")
                 .headers(httpHeaders -> headers.forEach((key, value) -> httpHeaders.add(key, value.toString())))
                 .bodyValue(request)
                 .retrieve()
